@@ -14,7 +14,7 @@ struct OnboardingView: View {
     var body: some View {
         TabView {
             ForEach(0..<5) { fruitCard in
-                FruitCardView()
+                //FruitCardView()
             } //: LOOP
         } //: TAB
         .tabViewStyle(PageTabViewStyle())
