@@ -17,6 +17,10 @@ struct Fruit : Identifiable  {
     var gradientColors : [Color]
     var description : String
     var nutrition : [String]
+    
+    var linearGradient : LinearGradient {
+        return LinearGradient(gradient: Gradient(colors: self.gradientColors), startPoint: .top, endPoint: .bottom)
+    }
 }
 
 
