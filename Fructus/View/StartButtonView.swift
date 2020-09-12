@@ -9,6 +9,7 @@ import SwiftUI
 
 struct StartButtonView: View {
     //MARK - PROPERTIES
+    @AppStorage("isOnboarding") var isOnboarding : Bool?
     
     //MARK - BODY
     var body: some View {
@@ -20,14 +21,14 @@ struct StartButtonView: View {
             }
             .padding(.horizontal, 16.0)
             .padding(.vertical, 10.0)
-            .foregroundColor(.accentColor)
+            .foregroundColor(.white)
             .background(Capsule().strokeBorder(Color.white, lineWidth: 1.25))
 
         }) //: BUTTON
     }
     
     func startClicked(){
-        
+        isOnboarding = false
     }
 }
 
