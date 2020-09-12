@@ -11,6 +11,7 @@ struct FruitHeaderView: View {
     // MARK - PROPERTIES
     
     var fruit : Fruit
+    @State private var isAnimatingTopImage : Bool = false
     
     // MARK - BODY
     var body: some View {
@@ -21,6 +22,16 @@ struct FruitHeaderView: View {
                 .resizable()
                 .scaledToFit()
                 .shadow(color: Color.black.opacity(0.15), radius: 8, x: 6, y: 8)
+                .padding(.vertical,20)
+                .scaleEffect(isAnimatingTopImage ? 1.0 : 0.6)
+        } //: ZSTACK
+        .frame(height: 440)
+        .onAppear(perform: animateImage)
+    }
+    
+    func animateImage(){
+        withAnimation(.easeOut(duration: 0.5)) {
+            isAnimatingTopImage = true
         }
     }
 }
