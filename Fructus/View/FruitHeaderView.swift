@@ -15,7 +15,12 @@ struct FruitHeaderView: View {
     // MARK - BODY
     var body: some View {
         ZStack{
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            fruit.linearGradient(start: .topLeading, end: .bottomTrailing)
+            
+            Image(fruit.image)
+                .resizable()
+                .scaledToFit()
+                .shadow(color: Color.black.opacity(0.15), radius: 8, x: 6, y: 8)
         }
     }
 }

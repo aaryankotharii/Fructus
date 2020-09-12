@@ -20,7 +20,7 @@ struct FruitRowView: View {
                 .scaledToFit()
                 .frame(width: 80, height: 80, alignment: .center)
                 .shadow(color: Color.black.opacity(0.3), radius: 3, x: 2, y: 2)
-                .background(fruit.linearGradient)
+                .background(fruit.linearGradient())
                 .cornerRadius(8)
             
             VStack(alignment: .leading, spacing: 5){
