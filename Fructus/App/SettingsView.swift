@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsView: View {
     // MARK - PROPERTIES
     @Environment(\.presentationMode) var presentztionMode
-    @AppStorage("inOnboarding") var isOnboarding :Bool = false
+    @AppStorage("isOnboarding") var isOnboarding :Bool = false
     
     // MARK - BODY
     var body: some View {
