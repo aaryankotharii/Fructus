@@ -30,6 +30,7 @@ struct ContentView: View {
                 SettingsView()
             }
         } //: NAVIGATION
+        .navigationViewStyle(StackNavigationViewStyle())
     }
     
     var topButton : some View{
