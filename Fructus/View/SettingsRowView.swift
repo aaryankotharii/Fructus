@@ -16,15 +16,18 @@ struct SettingsRowView: View {
     
     // MARK - BODY
     var body: some View {
-        HStack{
-            Text(name)
-                .foregroundColor(.gray)
-            Spacer()
-            if (content != nil) {
-                Text(content!)
-            } else {
-                Link(linklabel!, destination: URL(string: "https://\(linkDestination!)")!)
-                Image(systemName: "arrow.up.right.square").foregroundColor(.pink)
+        VStack {
+            Divider().padding(.vertical,4)
+            HStack{
+                Text(name)
+                    .foregroundColor(.gray)
+                Spacer()
+                if (content != nil) {
+                    Text(content!)
+                } else {
+                    Link(linklabel!, destination: URL(string: "https://\(linkDestination!)")!)
+                    Image(systemName: "arrow.up.right.square").foregroundColor(.pink)
+                }
             }
         }
     }
