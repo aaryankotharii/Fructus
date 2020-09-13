@@ -29,9 +29,9 @@ struct FruitNutrientsView: View {
                         Spacer(minLength: 25)
                         Text(fruit.nutrition[item])
                             .multilineTextAlignment(.trailing)
-                    }
-                }
-            }
+                    } //: HSTACK
+                } //: FOR
+            } //: DISCLOSURE
         } //: BOX
     }
 }
