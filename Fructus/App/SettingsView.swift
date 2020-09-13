@@ -48,8 +48,13 @@ struct SettingsView: View {
                           .multilineTextAlignment(.leading)
                         
                         Toggle(isOn: $isOnboarding){
-                            Text("RESTART")
+                            Text(isOnboarding ? "RESTARTED" : "RESTART")
+                                .bold()
+                                .foregroundColor(isOnboarding ? .green : .secondary)
                         }
+                        .padding()
+                        .background(Color(UIColor.tertiarySystemBackground).clipShape(RoundedRectangle(cornerRadius: 8, style: .continuous)))
+                        
                     }
                     
                     // MARK - SECTION 3
