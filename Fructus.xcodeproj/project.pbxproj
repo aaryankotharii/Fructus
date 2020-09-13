@@ -21,6 +21,7 @@
 		5B4E925B250D2EC20070028B /* FruitHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E925A250D2EC20070028B /* FruitHeaderView.swift */; };
 		5B4E925D250D35680070028B /* SourceLinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E925C250D35680070028B /* SourceLinkView.swift */; };
 		5B4E925F250DD2B80070028B /* FruitNutrientsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B4E925E250DD2B80070028B /* FruitNutrientsView.swift */; };
+		5B902D9C250DD6D800634A3B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B902D9B250DD6D800634A3B /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5B4E925A250D2EC20070028B /* FruitHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitHeaderView.swift; sourceTree = "<group>"; };
 		5B4E925C250D35680070028B /* SourceLinkView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceLinkView.swift; sourceTree = "<group>"; };
 		5B4E925E250DD2B80070028B /* FruitNutrientsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FruitNutrientsView.swift; sourceTree = "<group>"; };
+		5B902D9B250DD6D800634A3B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 				5B4E9239250CAFA50070028B /* FructusApp.swift */,
 				5B4E923B250CAFA50070028B /* ContentView.swift */,
 				5B4E924E250D030E0070028B /* OnboardingView.swift */,
+				5B902D9B250DD6D800634A3B /* SettingsView.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -212,6 +215,7 @@
 				5B4E924F250D030E0070028B /* OnboardingView.swift in Sources */,
 				5B4E9252250D08490070028B /* FruitModel.swift in Sources */,
 				5B4E923A250CAFA50070028B /* FructusApp.swift in Sources */,
+				5B902D9C250DD6D800634A3B /* SettingsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
