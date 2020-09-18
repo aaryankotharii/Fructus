@@ -43,7 +43,7 @@ A property wrapper type that reflects a value from UserDefaults and updates UI b
 
 <br/>
 
-### Title2
+#### Title2
 ```
 A new case in the FontStyle enum. To be used in second level hierarchy of view. (Ex: subtitle)
 ```
